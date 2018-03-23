@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <title>CSS Tricks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+      function showSidebar() {
+        document.getElementById('sidebar').style.right = 0
+      }
+
+      function hideSidebar() {
+        document.getElementById('sidebar').style.right = '-90%'
+      }
+    </script>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav>
+        <section class="logo">
+          GOMYTRAVEL
+        </section>
+        <section class="search">
+          <input placeholder="search" />
+          <i class="fas fa-search"></i>
+        </section>
+        <section class="menu">
+          <ul>
+            <li class='dropdown'>
+              Plans
+              <ul>
+                <i class="fas fa-caret-down"></i>
+                <li>Individual</li>
+                <li>Group</li>
+                <li>Couple</li>
+              </ul>
+            </li>
+            <li>About US</li>
+            <li>Contact</li>
+            <li>Login</li>
+          </ul>
+        </section>
+        <i class="fas fa-bars" onclick='showSidebar()'></i>
+      </nav>
+    </header>
+    <aside class="sidebar" id='sidebar'>
+      <i onclick='hideSidebar()' class="fas fa-times"></i>
+      <section class="search">
+        <input placeholder="search" />
+        <i class="fas fa-search"></i>
+      </section>
+      <section class="menu">
+        <ul>
+          <li>
+            Plans
+            <ul>
+              <li>Individual</li>
+              <li>Group</li>
+              <li>Couple</li>
+            </ul>
+          </li>
+          <li>About US</li>
+          <li>Contact</li>
+          <li>Login</li>
+        </ul>
+      </section>
+    </aside>
+    <main>
+      <section class='banner'>
+        <div class="gradiant"></div>
+        <h1>Come visit NY</h1>
+        <button>Buy tickets</button>
+      </section>
+      <section class="about-us">
+        <h1>We are GOMYTRAVEL</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
